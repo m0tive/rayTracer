@@ -52,3 +52,5 @@ else :
 src_files = Split( 'util.cpp vector.cpp vector2D.cpp matrix.cpp quaternion.cpp color.cpp image.cpp ray.cpp intersection.cpp pointLight.cpp areaLight.cpp camera.cpp material.cpp objLoader.cpp mesh.cpp geometry.cpp AABB.cpp scene.cpp rayTracer.cpp main.cpp')
 
 env.Program( '#bin/rayTracer', src_files )
+
+env.Command( 'img', '', Mkdir("img") )
